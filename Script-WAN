@@ -1,5 +1,6 @@
 #!/bin/bash
 # Author : Maxime POUVREAU, Ben CALVET
+# Script de Ban IP, à exécuter sur un routeur linux.
 # Creative Commons, Tous droits réservés
 # Lord Corp.
 # Definition des variables :

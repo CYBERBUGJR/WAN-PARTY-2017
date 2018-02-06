@@ -4,6 +4,13 @@
 # Lord Corp.
 # Definition des variables :
 
+
+if test -z $(dpkg -l | cut -f 3 -d " " | grep dialog)  ; then 
+	apt update
+	apt install dialog
+fi
+
+
 if [ "$(id -u)" != 0 ] ; then
 	dialog --msgbox "Merci de lancer ce programme en tant que root !" 0 0
 	exit 1
